@@ -158,11 +158,46 @@ h3 {
 
 /*Nosotros*/
 
-
+.nosotros {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+}
+@media (min-width: 768px) {
+    .nosotros {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
+.nosotros_imagen {
+    grid-row: 1 / 2;
+}
+@media (min-width: 768px) {
+    .nosotros_imagen {
+       grid-column: 2 / 3;
+    }
+}
 
 /*Bloques pagina nosotros*/
 
+.bloques{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
 
+@media (min-width: 768px) {
+    .bloques{
+       grid-template-columns: repeat(4,1fr);
+    }
+}
+
+.bloque{
+    text-align: center;
+}
+
+.bloque_titulo{
+    font-size: 2.3rem;
+    
+}
 
 /*Pagina del producto*/
 
