@@ -105,12 +105,18 @@ h3 {
 
 .producto_nombre{
     font-size: 4rem;
+    color: var(--secundario);
 }
 
 .producto_precio{
     font-size: 2.8rem;
     color: var(--secundario);
 }
+
+.producto_precio span{
+    text-align: center;
+}
+
 .producto_nombre,
 .producto_precio{
     font-family: var(--fuentePrincipal);
@@ -201,3 +207,11 @@ h3 {
 
 /*Pagina del producto*/
 
+.cart{
+    height: 5rem;
+    width: 5rem;
+}
+
+.header{
+    display: grid;
+}

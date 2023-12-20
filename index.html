@@ -7,6 +7,8 @@
     <title>Store</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
 </head>
 
 <body>
@@ -14,6 +16,35 @@
         <a href="">
             <img class="header_logo" src="img/logo.png" alt="">
         </a>
+        <div class="container">
+            <div class="row">
+                <div class="four columns">
+                    
+                </div>
+                <div class="two columns u-pull-rigth">
+                    <ul>
+                        <li class="submenu">
+                            <img src="img/cart.png" id="img-carrito" alt="">
+                            <div id="carrito">
+                                <table id="lista-carrito" class="u-full-width">
+                                    <thead>
+                                        <tr>
+                                            <th>Imagen</th>
+                                            <th>Nombre</th>
+                                            <th>Precio</th>
+                                            <th>Cantidad</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+                                <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </header>
     <nav class="navegacion">
         <a href="index.html" class="navegacion_enlace navegacion_enlace--activo">Tienda</a>
@@ -21,161 +52,147 @@
         <a href="producto.html" class="navegacion_enlace">Producto</a>
     </nav>
 
-    <main class="contenedor">
-        <h1>Nuestros Productos</h1>
+    <main class="contenedor" id="lista-cursos">
+        <h1 id="encabezado" class="encabezado">Nuestros Productos</h1>
         <div class="grid">
-            <!--producto-->
             <div class="producto">
-                <a href="">
-                    <img src="img/1.jpg" alt="">
-                    <div class="producto_informacion">
-                        <p class="producto_nombre">Vue JS</p>
-                        <p class="producto_precio">$25</p>
-                    </div>
-                </a>
+                <img src="img/1.jpg" alt="">
+                <div class="producto_informacion">
+                    <h4 class="producto_nombre">Vue JS</h4>
+                    <p class="producto_precio precio"><span>$25</span></p>
+                    <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar Al Carrito</a>
+                </div>
             </div>
             <!--fin producto-->
             <!--producto-->
             <div class="producto">
-                <a href="">
                     <img src="img/2.jpg" alt="">
                     <div class="producto_informacion">
-                        <p class="producto_nombre">Angular JS</p>
-                        <p class="producto_precio">$25</p>
+                        <h4 class="producto_nombre">Angular JS</h4>
+                        <p class="producto_precio precio"><span>$25</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="2">Agregar Al Carrito</a>
                     </div>
-                </a>
             </div>
             <!--fin producto-->
             <!--producto-->
             <div class="producto">
-                <a href="">
                     <img src="img/3.jpg" alt="">
                     <div class="producto_informacion">
-                        <p class="producto_nombre">React JS</p>
-                        <p class="producto_precio">$25</p>
+                        <h4 class="producto_nombre">React JS</h4>
+                        <p class="producto_precio precio"><span>$25</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">Agregar Al Carrito</a>
                     </div>
-                </a>
             </div>
             <!--fin producto-->
             <!--producto-->
             <div class="producto">
-                <a href="">
                     <img src="img/4.jpg" alt="">
                     <div class="producto_informacion">
-                        <p class="producto_nombre">Redux</p>
-                        <p class="producto_precio">$25</p>
+                        <h4 class="producto_nombre">Redux</h4>
+                        <p class="producto_precio precio"><span>$25</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="4">Agregar Al Carrito</a>
                     </div>
-                </a>
             </div>
             <!--fin producto-->
             <!--producto-->
             <div class="producto">
-                <a href="">
                     <img src="img/5.jpg" alt="">
                     <div class="producto_informacion">
-                        <p class="producto_nombre">Node JS</p>
-                        <p class="producto_precio">$25</p>
+                        <h4 class="producto_nombre">Node JS</h4>
+                        <p class="producto_precio precio"><span>$25</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="5">Agregar Al Carrito</a>
                     </div>
-                </a>
             </div>
             <!--fin producto-->
             <!--producto-->
             <div class="producto">
-                <a href="">
                     <img src="img/6.jpg" alt="">
                     <div class="producto_informacion">
-                        <p class="producto_nombre">Sass</p>
-                        <p class="Producto_precio"></p>
+                        <h4 class="producto_nombre">Sass</h4>
+                        <p class="producto_precio precio"><span>$25</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="6">Agregar Al Carrito</a>
                     </div>
-                </a>
+
             </div>
             <!--fin producto-->
             <!--producto-->
             <div class="producto">
-                <a href="">
                     <img src="img/7.jpg" alt="">
                     <div class="producto_informacion">
-                        <p class="producto_nombre">Html</p>
-                        <p class="producto_precio">$25</p>
+                        <h4 class="producto_nombre">Html</h4>
+                        <p class="producto_precio precio"><span>$25</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="7">Agregar Al Carrito</a>
                     </div>
-                </a>
             </div>
             <!--fin producto-->
             <!--producto-->
             <div class="producto">
-                <a href="">
                     <img src="img/8.jpg" alt="">
                     <div class="producto_informacion">
-                        <p class="producto_nombre">GitHub</p>
-                        <p class="producto_precio">$25</p>
+                        <h4 class="producto_nombre">GitHub</h4>
+                        <p class="producto_precio precio"><span>$25</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="8">Agregar Al Carrito</a>
                     </div>
-                </a>
             </div>
             <!--fin producto-->
             <!--producto-->
             <div class="producto">
-                <a href="">
                     <img src="img/9.jpg" alt="">
                     <div class="producto_informacion">
-                        <p class="producto_nombre">Bulma</p>
-                        <p class="producto_precio">$25</p>
+                        <h4 class="producto_nombre">Bulma</h4>
+                        <p class="producto_precio precio"><span>$25</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="9">Agregar Al Carrito</a>
                     </div>
-                </a>
             </div>
             <!--fin producto-->
             <!--producto-->
             <div class="producto">
-                <a href="">
                     <img src="img/10.jpg" alt="">
                     <div class="producto_informacion">
-                        <p class="producto_nombre">TypeScrip</p>
-                        <p class="producto_precio">$25</p>
+                        <h4 class="producto_nombre">TypeScrip</h4>
+                        <p class="producto_precio precio"><span>$25</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="10">Agregar Al Carrito</a>
                     </div>
-                </a>
             </div>
             <!--fin producto-->
             <!--producto-->
             <div class="producto">
-                <a href="">
                     <img src="img/11.jpg" alt="">
                     <div class="producto_informacion">
-                        <p class="producto_nombre">Drupal</p>
-                        <p class="producto_precio">$25</p>
+                        <h4 class="producto_nombre">Drupal</h4>
+                        <p class="producto_precio precio"><span>$25</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="11">Agregar Al Carrito</a>
                     </div>
-                </a>
             </div>
             <!--fin producto-->
             <!--producto-->
             <div class="producto">
-                <a href="">
                     <img src="img/12.jpg" alt="">
                     <div class="producto_informacion">
-                        <p class="producto_nombre">Vue JS</p>
-                        <p class="producto_precio">$25</p>
+                        <h4 class="producto_nombre precio">JavaScript</h4>
+                        <p class="producto_precio precio"><span>$25</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="12">Agregar Al Carrito</a>
                     </div>
-                </a>
             </div>
             <!--fin producto-->
             <!--producto-->
             <div class="producto">
-                <a href="">
                     <img src="img/13.jpg" alt="">
                     <div class="producto_informacion">
-                        <p class="producto_nombre">JavaScript</p>
-                        <p class="producto_precio">$25</p>
+                        <h4 class="producto_nombre">Grphql</h4>
+                        <p class="producto_precio precio"><span>$25</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="13">Agregar Al Carrito</a>
                     </div>
-                </a>
             </div>
             <!--fin producto-->
             <!--producto-->
             <div class="producto">
-                <a href="">
                     <img src="img/14.jpg" alt="">
                     <div class="producto_informacion">
-                        <p class="producto_nombre">Grphql</p>
-                        <p class="producto_precio">$25</p>
+                        <h4 class="producto_nombre">Wordpress</h4>
+                        <p class="producto_precio precio"><span>$25</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="14">Agregar Al Carrito</a>
                     </div>
-                </a>
             </div>
             <!--fin producto-->
             <div class="grafico grafico--camisas"></div>
@@ -184,5 +201,5 @@
     </main>
     <footer class="footer footer__texto">Front end store - todos los derechos reservados</footer>
 </body>
-
+    <script src="js/app.js"></script>
 </html>
